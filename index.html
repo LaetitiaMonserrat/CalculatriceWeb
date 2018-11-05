@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
-	<table class="calculatrice" id="calc">
-        <tr>
+        <table class="calculatrice" id="calc">
+            <tr>
                 <td colspan="4" class="calc_td_resultat">
                     <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="key_detect_calc('calc',event);" />
                 </td>
@@ -84,5 +84,8 @@
             </tr>
         </table>
         <script src="JS/script.js"></script>
+        <script type="text/javascript">
+                document.getElementById('calc').onload=initialiser_calc('calc'); 
+        </script>
 </body>
 </html>
